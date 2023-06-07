@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a;
+    int *p;//value at address (adresteki değer)
+    p=&a;//address
+    a=50;
+    *p=82;//Eger pointera değer atarsak a referansını tuttugu için a da değişir yoksa default a nın kendi degeri atanır
+    cout<<p<<" "<<a<<" "<<&a<<" "<<&p<<" "<<*p<<"  ";
+    
+}
+
