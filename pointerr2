@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a=78;//pointerda '**' koyup bir önceki pointera değer atama
+    
+    int *p;
+    p=&a;//&a=p; burda hata verir dikkat etmek lazım. P solda olmalı.
+    *p=90;
+    
+    
+    int **c;
+     c=&p;
+     **c=8;
+    
+    cout<<a<<" "<<p<<" "<<*p;
+}
