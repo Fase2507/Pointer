@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+struct Student{
+    int id;
+    string name;
+    string department;
+};
+
+int main(){
+    Student student1={23,"Fatih_Sever","BLG"};
+    Student* ptr=&student1;
+    ptr->name="Ali";
+    ptr->id=101;
+    ptr->department="İlahiyat";
+    cout<<ptr->name<<" "<<ptr->id<<" "<<ptr->department<<endl;
+    
+    
+}
